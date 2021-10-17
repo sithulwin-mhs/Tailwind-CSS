@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tailwind.css">
+</head>
+<body>
+    <!-- flex-nowrap -->
+    <div class="flex flex-nowrap">
+        <div class="bg-gray-400">One</div>
+        <div class="bg-red-400">Two</div>
+        <div class="bg-gray-400">Three</div>
+    </div>
+    <!--flex-wrap-->
+    <div class="flex flex-wrap mt-2">
+        <div class="bg-green-400">One</div>
+        <div class="bg-blue-400">Two</div>
+        <div class="bg-green-400">Three</div>
+    </div>
+    <!-- flex -->
+    <div class="flex flex-initial mt-2">
+        <div class="bg-green-400">One</div>
+        <div class="bg-red-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quae tenetur sequi magnam sunt doloremque qui quasi officiis ducimus ea ab tempora veniam, 
+            non eveniet ipsa repudiandae id, fuga quisquam libero?</div>
+        <div class="bg-green-400">Two</div>
+    </div>
+    <!-- flex-1 -->
+    <div class="flex mt-4">
+        <div class="bg-green-400 flex-1">
+            One
+        </div>
+        <div class="bg-red-400 flex-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quae tenetur sequi magnam sunt doloremque qui quasi officiis ducimus ea ab tempora veniam, 
+            non eveniet ipsa repudiandae id, fuga quisquam libero?
+        </div>
+        <div class="bg-green-400 flex-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quae tenetur sequi magnam sunt doloremque qui quasi officiis ducimus ea ab tempora veniam, 
+            non eveniet ipsa repudiandae id, fuga quisquam libero?
+        </div>
+    </div>
+    <!-- flex-grow -->
+    <div class="flex mt-4 space-x-2">
+        <div class="bg-gray-600 w-16 h-16 flex-grow">One</div>
+        <div class="bg-red-600 flex-grow-0">Two</div>
+        <div class="bg-gray-600 w-16 h-16 flex-grow">Three</div>
+    </div>
+</body>
+</html>
