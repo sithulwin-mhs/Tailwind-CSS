@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tailwind.css">
+</head>
+<body>
+    <!-- Spanning Column -->
+    <div class="grid grid-cols-4 gap-2 text-center mt-4">
+        <div class="bg-gray-400 col-span-2">One</div>
+        <div class="bg-gray-400 col-span-2">Two</div>
+    </div>
+    <!-- Starting and ending line -->
+    <div class="grid grid-cols-6 gap-4 mt-4">
+        <div class="col-start-2 col-span-4 bg-gray-400">1</div>
+        <div class="col-start-2 col-end-3 bg-gray-400">2</div>
+        <div class="col-start-4 col-end-5 bg-gray-600">3</div>
+    </div>
+    <!-- Grid Template Rows -->
+    <div class="h-64 grid grid-cols-4 gap-2 mt-4">
+        <div class="bg-gray-400">One</div>
+        <div class="bg-gray-400 col-span-2">Two</div>
+        <div class="bg-gray-400">Three</div>
+    </div>
+    <!-- Spanning Row -->
+    <!-- mixed cols and rows -->
+    <div class="grid grid-rows-3 grid-flow-col gap-4 mt-4">
+        <div class="row-span-3 bg-red-400">1</div>
+        <div class="col-span-2 bg-gray-400">2</div>
+        <div class="row-span-2 col-span-2 bg-green-400">3</div>
+    </div>
+    <div class="grid grid-rows-3 grid-flow-col gap-4 mt-4">
+        <div class="col-span-2 bg-red-400">1</div>
+        <div class="row-span-2 col-span-2 bg-green-400">3</div>
+        <div class="row-span-3 bg-gray-400">2</div>
+    </div>
+    <div class="grid grid-row-3 grid-flow-col gap-4 mt-4">
+        <div class="row-span-3 bg-blue-400">One</div>
+        <div class="col-span-2 bg-gray-400">Two</div>
+        <div class="col-span-2 bg-gray-400">Two</div>
+        <div class="col-span-2 bg-gray-400">Two</div>
+    </div>
+    <!-- Grid Auto Column -->
+    <div class="grid grid-flow-row auto-rows-max mt-4">
+        <div class="bg-gray-400">1</div>
+        <div class="bg-gray-400">2</div>
+        <div class="bg-gray-400">3</div>
+    </div>
+</body>
+</html>
